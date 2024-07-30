@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 
-const Citycard = () => {
+const Citycardold = () => {
+
+
   const cards = [
     {
       id: 1,
@@ -58,7 +60,7 @@ const Citycard = () => {
                 src={card.image}
                 className="card-img"
                 alt={card.title}
-                style={{ width: '100%', height: '200px', objectFit: 'cover' }}
+                style={{ width: '100%', height: '150px', objectFit: 'cover' }}
               />
               {hoveredCard === card.id && (
                 <div
@@ -89,4 +91,4 @@ const Citycard = () => {
   );
 };
 
-export default Citycard;
+export default Citycardold;
