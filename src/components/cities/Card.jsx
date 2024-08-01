@@ -1,6 +1,6 @@
 import React from "react";
 
-const Card = () => {
+const Card = ({ title, image, link }) => {
   return (
     <div className="container mt-5">
       <div className="row justify-content-center">
@@ -15,20 +15,19 @@ const Card = () => {
               position: "relative",
               margin: "0 auto"
             }}
-          >
-            <div
-              className="card-body d-flex flex-column justify-content-between"
-              style={{ zIndex: 2, height: "150px" }}
-            >
-              <div>
-                <h5 className="card-title">TITLE</h5>
-              </div>
-              <div className="mt-auto">
-                <a href="#" className="btn btn-secondary">
+          >         
+              <img
+                src={image}
+                className="card-img"
+                alt={title}
+                style={{ width: '100%', height: '150px', objectFit: 'cover' }}
+              />
+              
+                <a href={link} className="btn btn-secondary">
                   Acceder
                 </a>
-              </div>
-            </div>
+                <h5 className="card-title">{title}</h5>
+            
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light shadow-sm p-3 mb-4 rounded">
@@ -38,7 +39,7 @@ const Header = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link font-weight-bold mx-1" id="help" href="#">
+              <a className="nav-link font-weight-bold mx-1" id="help" href="help">
                 Ayuda
               </a>
             </li>
